@@ -176,6 +176,18 @@ by Momo Outaadi (m4ll0k)
 
 ```
 
+## Docker
+### Build
+```
+$ git clone https://github.com/m4ll0k/WPSeku.git wpseku
+$ cd wpseku
+$ Docker build -t wpseku .
+```
+### Run
+```
+$ Docker run --rm -ti wpseku -h
+```
+
 ## Credits and Contributors
 Original idea and script from WPScan Team (https://wpscan.org/)
 

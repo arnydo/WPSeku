@@ -3,13 +3,14 @@
 #
 # VERSION 1.0
 
-FROM python:3
+FROM python:3-alpine
 
 WORKDIR /usr/src/app
 
 # Copy source files
-COPY . ./
+COPY requirements.txt .
 RUN pip install -r requirements.txt
+COPY . .
 
 ENTRYPOINT [ "python", "./wpseku.py" ]
 CMD [ "--help" ]
